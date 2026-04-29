@@ -1,4 +1,5 @@
 export interface Produto {
+imagens: any;
   id: number;
   nome: string;
   descricao: string;

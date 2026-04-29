@@ -23,9 +23,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   // ── Carrossel Hero ──────────────────────────────────────────
   slides: SlideHero[] = [
-    { id: 1, url: '', alt: 'Coleção primavera' },
-    { id: 2, url: '', alt: 'Peças exclusivas' },
-    { id: 3, url: '', alt: 'Novidades da semana' },
+    { id: 1, url: 'https://images.unsplash.com/photo-1595175131388-65cd0200facb?auto=format&fit=crop&w=800&q=80', alt: 'Coleção primavera' },
+    { id: 2, url: 'https://images.unsplash.com/photo-1590664325935-68aba5254108?auto=format&fit=crop&w=800&q=80', alt: 'Peças exclusivas' },
+    { id: 3, url: 'https://images.unsplash.com/photo-1577959806854-375d1bed6c93?auto=format&fit=crop&w=800&q=80', alt: 'Novidades da semana' },
   ];
   currentSlide = 0;
   private autoplayTimer: ReturnType<typeof setInterval> | null = null;
