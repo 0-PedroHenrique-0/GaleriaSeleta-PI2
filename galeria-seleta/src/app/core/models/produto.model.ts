@@ -1,12 +1,16 @@
+import { ImagemProduto } from './imagem-produto.model';
+
 export interface Produto {
-imagens: any;
   id: number;
+  categoria_id: number;
   nome: string;
-  descricao: string;
+  descricao: string | null;
   preco: number;
   preco_desconto: number | null;
-  imagem_url: string;
-  categoria: string;
-  status: 'ativo' | 'inativo';
+  estoque: number;
+  status: 'ativo' | 'inativo' | 'rascunho';
   criado_em: string;
+  imagens?: ImagemProduto[];
+  imagem_url?: string;
+  categoria?: string;
 }

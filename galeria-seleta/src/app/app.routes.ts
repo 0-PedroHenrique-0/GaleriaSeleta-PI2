@@ -4,12 +4,18 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { EsqueciSenhaComponent } from './esqueci-senha/esqueci-senha.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { ProdutoDetalhesComponent } from './produto-detalhes/produto-detalhes.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 export const routes: Routes = [
-  { path: '',              component: HomeComponent         },
-  { path: 'cadastro',      component: CadastroComponent     },
-  { path: 'login',         component: LoginComponent        },
-  { path: 'esqueci-senha', component: EsqueciSenhaComponent },
-  { path: 'sobre', component: SobreComponent },
-  { path: '**',            redirectTo: ''                   }
+  { path: '',              component: HomeComponent             },
+  { path: 'cadastro',      component: CadastroComponent         },
+  { path: 'login',         component: LoginComponent            },
+  { path: 'esqueci-senha', component: EsqueciSenhaComponent     },
+  { path: 'sobre',         component: SobreComponent            },
+  { path: 'produtos',      component: ProdutosComponent         },
+  { path: 'produtos/:id',  component: ProdutoDetalhesComponent  },
+  { path: 'checkout',      component: CheckoutComponent         },
+  { path: '**',            redirectTo: ''                       }
 ];
